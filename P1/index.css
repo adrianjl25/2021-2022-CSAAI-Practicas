@@ -1,3 +1,12 @@
 body {
     background-image: url('Nerv_back.jpg');
 }
+
+h1 {
+    color: aquamarine;
+}
+
+.title {
+    color: aquamarine;
+    font-size: large;
+}
