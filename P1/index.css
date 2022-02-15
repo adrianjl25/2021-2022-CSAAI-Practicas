@@ -6,6 +6,20 @@ body {
     background-image: url('Nerv_back.jpg');
 }
 
+.Asukacv{
+    border:solid aquamarine;
+}
+
+.Asukajoker{
+    margin-right: 400px;
+    border:solid aquamarine;
+}
+
+.Asukapium{
+    margin-left: 400px;
+    border:solid aquamarine;
+}
+
 h1 {
     color: aquamarine;
     font-family: "nier";
@@ -14,6 +28,15 @@ h1 {
 p1 {
     color: aquamarine;
     font-family: "nier";
+    font-size: large;
+    text-align: center;
+   
+}
+p {
+    color: aquamarine;
+    font-family: "nier";
+    font-size: large;
+   
 }
 
 .title {
@@ -27,16 +50,16 @@ p1 {
 }
 left{
     border-radius: 20px;
-    width: 30%;
-    border:solid white;
+    width: 35%;
+    border:solid aquamarine;
     float: left;
     margin-bottom: 2%;
 }
 rigth{
     text-align: center;
     border-radius: 20px;
-    width: 60%;
-    border: solid white;
+    width: 55%;
+    border: solid aquamarine;
     float: right;
     margin-right: 5%;
 
