@@ -25,11 +25,15 @@ h1 {
     font-family: "nier";
     
 }
-p1 {
+
+
+
+.sobremi {
     color: aquamarine;
     font-family: "nier";
     font-size: large;
-    text-align: center;
+    padding-left: 1%;
+    
    
 }
 p {
@@ -43,24 +47,36 @@ p {
     color: aquamarine;
     font-size: large;
     font-family: "nier";
+    margin-left: 1%;
 }
 
 .lista {
     color: aquamarine;
+    font-size: large;
+    
 }
+
+.estudios{
+    list-style: none;
+}
+
 left{
-    border-radius: 20px;
-    width: 35%;
+    border-radius: 10px;
+    width: 40%;
     border:solid aquamarine;
     float: left;
-    margin-bottom: 2%;
+    margin-left: 1%;
+
 }
 rigth{
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 55%;
     border: solid aquamarine;
     float: right;
-    margin-right: 5%;
+    margin-right: 2%;
 
+}
+button{
+    margin-left: 2%;
 }
