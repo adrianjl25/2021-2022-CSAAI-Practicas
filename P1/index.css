@@ -1,12 +1,43 @@
+@font-face{
+    font-family: "nier";
+    src: url("ITC\ Benguiat\ Book.ttf");
+}
 body {
     background-image: url('Nerv_back.jpg');
 }
 
 h1 {
     color: aquamarine;
+    font-family: "nier";
+    
+}
+p1 {
+    color: aquamarine;
+    font-family: "nier";
 }
 
 .title {
     color: aquamarine;
     font-size: large;
+    font-family: "nier";
+}
+
+.lista {
+    color: aquamarine;
+}
+left{
+    border-radius: 20px;
+    width: 30%;
+    border:solid white;
+    float: left;
+    margin-bottom: 2%;
+}
+rigth{
+    text-align: center;
+    border-radius: 20px;
+    width: 60%;
+    border: solid white;
+    float: right;
+    margin-right: 5%;
+
 }
