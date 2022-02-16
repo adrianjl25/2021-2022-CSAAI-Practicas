@@ -43,11 +43,19 @@ p {
    
 }
 
+.Nombre{
+    text-decoration-line: underline;
+    font-size:xx-large;
+    
+}
+
+
 .title {
     color: aquamarine;
     font-size: large;
     font-family: "nier";
     margin-left: 1%;
+    text-decoration-line: underline;
 }
 
 .lista {
