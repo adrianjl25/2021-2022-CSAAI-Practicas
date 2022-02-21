@@ -51,10 +51,8 @@ p {
 
 
 .asukabetis{
-    display: inline-block;
-    position: relative;
-    bottom: 100px;
-    left: 80%;
+    padding-bottom: 2%;
+    margin-left: 5%;
 }
 
 
