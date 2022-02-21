@@ -8,16 +8,22 @@ body {
 
 .Asukacv{
     border:solid aquamarine;
+    max-width: 100%;
+    height: auto;
 }
 
 .Asukajoker{
     margin-right: 400px;
     border:solid aquamarine;
+    max-width: 100%;
+    height: auto;
 }
 
 .Asukapium{
     margin-left: 400px;
     border:solid aquamarine;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
