@@ -41,19 +41,22 @@ body {
 #Asukacv{
     margin: auto;
     border:solid aquamarine;
-    
+    max-width: 100%;
+    height: auto;
 }
 
 #Asukajoker{
     margin: auto;
     border:solid aquamarine;
-    
+    max-width: 100%;
+    height: auto;
 }
 
 #Asukapium{
     margin: auto;
     border:solid aquamarine;
-    
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
