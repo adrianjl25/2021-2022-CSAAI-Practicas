@@ -5,9 +5,6 @@
 body {
     background-image: url('Nerv_back.jpg');
 }
-* {
-    box-sizing: border-box;
-  }
 
 
 .iresponsive {
@@ -26,29 +23,37 @@ body {
 
     .iresponsive {
         width: 100%;
+    
+    }
+
+    .imagenes{
+        width: 100%;
     }
 }
 
+.imagenes{
+    display: flex;
 
-
-.Asukacv{
-    border:solid aquamarine;
-    max-width: 100%;
-    height: auto;
+    
 }
 
-.Asukajoker{
-    margin-right: 400px;
+
+#Asukacv{
+    margin: auto;
     border:solid aquamarine;
-    max-width: 100%;
-    height: auto;
+    
 }
 
-.Asukapium{
-    margin-left: 400px;
+#Asukajoker{
+    margin: 40px;
     border:solid aquamarine;
-    max-width: 100%;
-    height: auto;
+    
+}
+
+#Asukapium{
+    margin: 40px;
+    border:solid aquamarine;
+    
 }
 
 h1 {
@@ -75,6 +80,7 @@ p {
 }
 
 .Nombre{
+    text-align: center;
     text-decoration-line: underline;
     font-size:xx-large;
     
