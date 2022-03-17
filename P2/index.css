@@ -19,11 +19,14 @@ body{
 }
 
 
+
+
 .calculadora{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
-    border-color: coral;
+    border:solid coral;
+    background-color: rgb(187, 58, 11);
     text-align: center;
     width: 350px;
     margin-top: 60px;
@@ -43,6 +46,8 @@ body{
     overflow: hidden;
     text-overflow: clip clip;
 }
+
+
 
 button{
     
