@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "darksouls";
+    src: url(OptimusPrinceps.ttf);
+}
+
+body{
+    background-image:url('Malenia.jpg') ;
+}
+
+.Intro{
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-family: "darksouls";
+    font-size: large;
+    text-align: center;
+    color: rgb(248, 209, 196);
+}
+
+
+.calculadora{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border-color: coral;
+    text-align: center;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pantalla{
+    background-color: rgb(231, 173, 25);
+    color: black;
+    width: 300px;
+    height: 60px;
+    margin-left: 25px;
+    border-radius: 20px;
+    border: solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip clip;
+}
+
+button{
+    
+    width:40px;
+    height:40px;
+    font-size:19px;
+}
+
+.numero{
+    background-color: rgb(246, 203, 203);
+    color: black;
+}
+.operador{
+    background-color: rgb(246, 203, 203);
+    color: black;
+}
+
+#igual{
+    background-color: rgb(246, 203, 203);
+    color: black;
+}
+#answer{
+    background-color: rgb(246, 203, 203);
+    color: black;
+}
+#clear{
+    background-color: rgb(246, 203, 203);
+    color: black;
+}
+#borrar{
+    background-color: rgb(246, 203, 203);
+    color: black;
+}
