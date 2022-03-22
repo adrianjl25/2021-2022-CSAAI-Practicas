@@ -4,8 +4,6 @@ borrar = document.getElementById("borrar")
 clear = document.getElementById("clear")
 igual = document.getElementById("igual")
 sqrt = document.getElementById("sqrt")
-
-
 let numeros = document.getElementsByClassName("numero")
 let operador = document.getElementsByClassName("operador")
 
@@ -24,31 +22,66 @@ for(i=0; i<numeros.length; i++){
         console.log("numero...")
     }
 }
-
+for(i=0; i<operador.length; i++){
+    operador[i].onclick=(ev)=>{
+        if(estado == ESTADO.op1){
+            
+            operacion(ev.target.value);
+            console.log("operacion...");
+        }
+    }
+}
 function digit(num){
     if(estado == ESTADO.init){
-        display.innerHTML = num;
+        pantalla.innerHTML = num;
         estado = ESTADO.op1;
     }
     else if(estado == ESTADO.op1){
-        display.innerHTML += num;
+        pantalla.innerHTML += num;
     }
     else if(estado == ESTADO.operation){
-        display.innerHTML += num;
+        pantalla.innerHTML += num;
         estado = ESTADO.op2;
     }
     else if(estado == ESTADO.op2){
-        display.innerHTML += num;
+        pantalla.innerHTML += num;
     }
 }
 
-function operacion(ope){
+function operacion(operador){
     if (estado != ESTADO.operation){
-        display.innerHTML += ope;
+        pantalla.innerHTML += operador;
         estado = ESTADO.operation;
     }
 }
 
 igual.onclick = () => {
-    
+    pantalla.innerHTML = eval(pantalla.innerHTML);
+     answer.value = pantalla.innerHTML;
+     estado = ESTADO.op1;
 }
+
+clear.onclick = (ev) => {
+    pantalla.innerHTML = " ";
+    console.log("clear")
+    estado = ESTADO.op1;
+}
+
+borrar.onclick = () => {
+    if (pantalla.innerHTML == "0"){
+      pantalla.innerHTML = "";
+    }else{
+      pantalla.innerHTML = pantalla.innerHTML.slice(0,-1);
+    }
+  }
+  
+   
+sqrt.onclick = () => {
+    pantalla.innerHTML = Math.sqrt(pantalla.innerHTML);
+  }
+  
+   
+answer.onclick = () => {
+      pantalla.innerHTML += answer.value;
+      estado = ESTADO.op2;
+   }

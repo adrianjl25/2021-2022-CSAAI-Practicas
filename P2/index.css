@@ -32,6 +32,8 @@ body{
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+    box-shadow: 2px;
 }
 
 #pantalla{
@@ -54,6 +56,7 @@ button{
     width:40px;
     height:40px;
     font-size:19px;
+    cursor: pointer;
 }
 
 .numero{
