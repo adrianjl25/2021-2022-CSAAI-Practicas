@@ -7,6 +7,7 @@ sqrt = document.getElementById("sqrt")
 let numeros = document.getElementsByClassName("numero")
 let operador = document.getElementsByClassName("operador")
 
+
 const ESTADO = {
     init: 0,
     op1:1,
@@ -62,7 +63,7 @@ igual.onclick = () => {
 }
 
 clear.onclick = (ev) => {
-    pantalla.innerHTML = "0";
+    pantalla.innerHTML = " ";
     console.log("clear")
     estado = ESTADO.op1;
 }
@@ -82,6 +83,20 @@ sqrt.onclick = () => {
   
    
 answer.onclick = () => {
-      pantalla.innerHTML += answer.value;
+      pantalla.innerHTML = answer.value;
       estado = ESTADO.op2;
    }
+
+let button = document.querySelector('.chat-button')
+
+   // alert('Buenos días profe');
+
+
+
+
+
+
+
+
+
+

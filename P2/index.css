@@ -29,13 +29,15 @@ body{
     background-color: rgba(255, 127, 80,0.9);
     top: 50%;
     left: 50%;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
 }
 
+
 #pantalla{
-    max-width: 100%;
+    
     width: 100%;
+    height: 50px;
     padding: 15px 10px;
     text-align: right;
     border-radius: 20px;
@@ -63,6 +65,7 @@ body{
     border-radius: 10px;
     border-color: rgba(188, 62, 39, 0.9);
     box-shadow: 0 0 1px 1px rgba(188, 62, 39, 0.9);
+    cursor: pointer;
 }
 
 .operador{
@@ -71,6 +74,7 @@ body{
     border-color: rgba(255,142,81,1);
     box-shadow: 0 0 1px 1px rgba(255,142,81,1);
     font-size: 20px;
+    cursor: pointer;
 }
 
 #borrar{
@@ -79,6 +83,7 @@ body{
     border-color: rgba(255,142,81,1);
     box-shadow: 0 0 1px 1px rgba(255,142,81,1);
     font-size: 20px;
+    cursor: pointer;
 }
 #clear{
     background-color: rgba(255,142,81,0.9);
@@ -86,6 +91,7 @@ body{
     border-color: rgba(255,142,81,1);
     box-shadow: 0 0 1px 1px rgba(255,142,81,1);
     font-size: 20px;
+    cursor: pointer;
 }
 #answer{
     background-color: rgba(255,142,81,0.9);
@@ -93,6 +99,7 @@ body{
     border-color: rgba(255,142,81,1);
     box-shadow: 0 0 1px 1px rgba(255,142,81,1);
     font-size: 20px;
+    cursor: pointer;
 }
 #igual{
     background-color: rgba(255,142,81,0.9);
@@ -100,4 +107,25 @@ body{
     border-color: rgba(255,142,81,1);
     box-shadow: 0 0 1px 1px rgba(255,142,81,1);
     font-size: 20px;
+    cursor: pointer;
 }
+
+.chat-button{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background: url(eldenlogo.png);
+    background-color: coral;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+
+
+
