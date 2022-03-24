@@ -62,7 +62,7 @@ igual.onclick = () => {
 }
 
 clear.onclick = (ev) => {
-    pantalla.innerHTML = " ";
+    pantalla.innerHTML = "0";
     console.log("clear")
     estado = ESTADO.op1;
 }

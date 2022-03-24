@@ -26,14 +26,15 @@ body{
     padding: 50px 30px;
     position: absolute;
     transform: translate(-50%, -50%);
-    background-color: coral;
+    background-color: rgba(255, 127, 80,0.9);
     top: 50%;
     left: 50%;
     border-radius: 8px;
-    box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
 }
 
 #pantalla{
+    max-width: 100%;
     width: 100%;
     padding: 15px 10px;
     text-align: right;
@@ -47,10 +48,56 @@ body{
 
 .botones{
     width: 100%;
-    height: 390px;
+    height: 350px;
     display: grid;
     grid-template-columns: repeat(6,97.7px);
     grid-gap: 3px;
+    font-size: 20px;
+    padding: 17px;
+    
 }
 
+.numero{
+    font-size: 20px;
+    background-color:rgba(188, 62, 39, 0.9);
+    border-radius: 10px;
+    border-color: rgba(188, 62, 39, 0.9);
+    box-shadow: 0 0 1px 1px rgba(188, 62, 39, 0.9);
+}
 
+.operador{
+    background-color: rgba(255,142,81,0.9);
+    border-radius: 10px;
+    border-color: rgba(255,142,81,1);
+    box-shadow: 0 0 1px 1px rgba(255,142,81,1);
+    font-size: 20px;
+}
+
+#borrar{
+    background-color: rgba(255,142,81,0.9);
+    border-radius: 10px;
+    border-color: rgba(255,142,81,1);
+    box-shadow: 0 0 1px 1px rgba(255,142,81,1);
+    font-size: 20px;
+}
+#clear{
+    background-color: rgba(255,142,81,0.9);
+    border-radius: 10px;
+    border-color: rgba(255,142,81,1);
+    box-shadow: 0 0 1px 1px rgba(255,142,81,1);
+    font-size: 20px;
+}
+#answer{
+    background-color: rgba(255,142,81,0.9);
+    border-radius: 10px;
+    border-color: rgba(255,142,81,1);
+    box-shadow: 0 0 1px 1px rgba(255,142,81,1);
+    font-size: 20px;
+}
+#igual{
+    background-color: rgba(255,142,81,0.9);
+    border-radius: 10px;
+    border-color: rgba(255,142,81,1);
+    box-shadow: 0 0 1px 1px rgba(255,142,81,1);
+    font-size: 20px;
+}
