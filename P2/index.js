@@ -1,11 +1,11 @@
-console.log("Iniciando código JS...")
-pantalla = document.getElementById("pantalla")
-borrar = document.getElementById("borrar")
-clear = document.getElementById("clear")
-igual = document.getElementById("igual")
-sqrt = document.getElementById("sqrt")
-let numeros = document.getElementsByClassName("numero")
-let operador = document.getElementsByClassName("operador")
+console.log("Iniciando código JS...");
+pantalla = document.getElementById("pantalla");
+borrar = document.getElementById("borrar");
+clear = document.getElementById("clear");
+igual = document.getElementById("igual");
+sqrt = document.getElementById("sqrt");
+numeros = document.getElementsByClassName("numero");
+operador = document.getElementsByClassName("operador");
 
 
 const ESTADO = {
@@ -75,22 +75,16 @@ borrar.onclick = () => {
       pantalla.innerHTML = pantalla.innerHTML.slice(0,-1);
     }
   }
-  
-   
-sqrt.onclick = () => {
-    pantalla.innerHTML = Math.sqrt(pantalla.innerHTML);
-  }
-  
    
 answer.onclick = () => {
       pantalla.innerHTML = answer.value;
-      estado = ESTADO.op2;
+      estado = ESTADO.op1;
    }
 
 let button = document.querySelector('.chat-button')
-
-   // alert('Buenos días profe');
-
+function saludos(){
+    alert('Buenos días maestro');
+}
 
 
 

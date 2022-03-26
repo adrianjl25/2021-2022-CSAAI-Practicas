@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,37 +18,34 @@
         <p id="Texto">Ofrece tus operaciones a la diosa de la putrefaccion
             y Espada de Miquella, Malenia.
         </p>
-        <a href="" class="chat-button"></a>
+        <a href="" class="chat-button" onclick="saludos()"></a>
     </div>
     <div class="calculadora">
         <p id="pantalla"> </p>
         <div class="botones">
-            
+            <button type="button" id="clear">AC</button>
+            <button type="button" id="borrar">DEL</button>
+            <button type="button" id="answer">ANS</button>
+            <button type="button" value="/" class="operador">÷</button>
             <button type="button" value="7" class="numero">7</button>
             <button type="button" value="8" class="numero">8</button>
             <button type="button" value="9" class="numero">9</button>
-            <button type="button" id="borrar">DEL</button>
-            <button type="button" id="clear">AC</button>
-            <button type="button" id="answer">Ans</button>
-            
+            <button type="button" value="**" class="operador">^</button>
             <button type="button" value="4" class="numero">4</button>
             <button type="button" value="5" class="numero">5</button>
             <button type="button" value="6" class="numero">6</button>
-            <button type="button" value="**" class="operador">^</button>
-            <button type="button" value="/" class="operador">÷</button>
             <button type="button" value="+" class="operador">+</button>
-            
             <button type="button" value="1" class="numero">1</button>
             <button type="button" value="2" class="numero">2</button>
             <button type="button" value="3" class="numero">3</button>
             <button type="button" value="*" class="operador">x</button>
-            <button type="button" value="-" class="operador">-</button>
-            
-            <button type="button" class="operador"  id="sqrt">√</button>
             <button type="button" value="0" class="numero">0</button>
             <button type="button" value="." class="numero">.</button>
-            <button type="button" value="3.1415926" class="numero">π</button>
-            <button type="button" id="igual" value="=">=</button>  
+            <button type="button" id="igual" value="=">=</button>
+            <button type="button" value="-" class="operador">-</button>
+            
+            
+              
         </div>
     </div>
 </body>
