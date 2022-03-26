@@ -1,27 +1,25 @@
-console.log("Iniciando código JS...");
-pantalla = document.getElementById("pantalla");
-borrar = document.getElementById("borrar");
-clear = document.getElementById("clear");
-igual = document.getElementById("igual");
-sqrt = document.getElementById("sqrt");
-numeros = document.getElementsByClassName("numero");
-operador = document.getElementsByClassName("operador");
+var pantalla = document.getElementById("pantalla");
+var borrar = document.getElementById("borrar");
+var clear = document.getElementById("clear");
+var igual = document.getElementById("igual");
+var numeros = document.getElementsByClassName("numero");
+var operador = document.getElementsByClassName("operador");
 
 
-const ESTADO = {
+var ESTADO = {
     init: 0,
-    op1:1,
-    operation:2,
-    op2:3,
-}
+    op1: 1,
+    operation: 2,
+    op2: 3
+};
 
-let estado = ESTADO.init;
+var estado = ESTADO.init;
 
-for(i=0; i<numeros.length; i++){
+for (i = 0; i< numeros.length; i++){
     numeros[i].onclick=(ev)=>{
         digit(ev.target.value);
-        console.log("numero...")
-    }
+        console.log("numero...");
+    };
 }
 for(i=0; i<operador.length; i++){
     operador[i].onclick=(ev)=>{
@@ -30,7 +28,7 @@ for(i=0; i<operador.length; i++){
             operacion(ev.target.value);
             console.log("operacion...");
         }
-    }
+    };
 }
 function digit(num){
     if(estado == ESTADO.init){
@@ -64,9 +62,9 @@ igual.onclick = () => {
 
 clear.onclick = (ev) => {
     pantalla.innerHTML = " ";
-    console.log("clear")
+    console.log("clear");
     estado = ESTADO.op1;
-}
+};
 
 borrar.onclick = () => {
     if (pantalla.innerHTML == "0"){
@@ -74,14 +72,14 @@ borrar.onclick = () => {
     }else{
       pantalla.innerHTML = pantalla.innerHTML.slice(0,-1);
     }
-  }
+  };
    
 answer.onclick = () => {
       pantalla.innerHTML = answer.value;
       estado = ESTADO.op1;
-   }
+   };
 
-let button = document.querySelector('.chat-button')
+let button = document.querySelector('.chat-button');
 function saludos(){
     alert('Buenos días maestro');
 }
