@@ -1,9 +1,16 @@
+var document;
+var i;
+var ev;
+
+
+
 var pantalla = document.getElementById("pantalla");
 var borrar = document.getElementById("borrar");
 var clear = document.getElementById("clear");
 var igual = document.getElementById("igual");
 var numeros = document.getElementsByClassName("numero");
 var operador = document.getElementsByClassName("operador");
+var button = document.querySelector('.chat-button');
 
 
 var ESTADO = {
@@ -15,8 +22,8 @@ var ESTADO = {
 
 var estado = ESTADO.init;
 
-for (i = 0; i< numeros.length; i++){
-    numeros[i].onclick=(ev)=>{
+for (i = 0; i < numeros.length; i++) {
+    numeros[i].onclick = (ev)=>{
         digit(ev.target.value);
         console.log("numero...");
     };
@@ -79,9 +86,9 @@ answer.onclick = () => {
       estado = ESTADO.op1;
    };
 
-let button = document.querySelector('.chat-button');
+
 function saludos(){
-    alert('Buenos días maestro');
+    alert('Adelante Sinluz, no temas, adéntrate en el interior del árbor hierático y ofrece tu operaciones a Malenia, espada de Miquella.');
 }
 
 
