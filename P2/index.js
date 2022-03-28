@@ -28,7 +28,7 @@ for (i = 0; i < numeros.length; i++) {
         console.log("numero...");
     };
 }
-for(i=0; i<operador.length; i++){
+for(i = 0; i < operador.length; i++){
     operador[i].onclick=(ev)=>{
         if(estado == ESTADO.op1){
             
@@ -38,24 +38,24 @@ for(i=0; i<operador.length; i++){
     };
 }
 function digit(num){
-    if(estado == ESTADO.init){
+    if(estado == ESTADO.init) {
         pantalla.innerHTML = num;
         estado = ESTADO.op1;
     }
-    else if(estado == ESTADO.op1){
+    else if(estado == ESTADO.op1) {
         pantalla.innerHTML += num;
     }
-    else if(estado == ESTADO.operation){
+    else if(estado == ESTADO.operation) {
         pantalla.innerHTML += num;
         estado = ESTADO.op2;
     }
-    else if(estado == ESTADO.op2){
+    else if(estado == ESTADO.op2) {
         pantalla.innerHTML += num;
     }
 }
 
-function operacion(operador){
-    if (estado != ESTADO.operation){
+function operacion(operador) {
+    if (estado != ESTADO.operation) {
         pantalla.innerHTML += operador;
         estado = ESTADO.operation;
     }
@@ -74,7 +74,7 @@ clear.onclick = (ev) => {
 };
 
 borrar.onclick = () => {
-    if (pantalla.innerHTML == "0"){
+    if (pantalla.innerHTML == "0") {
       pantalla.innerHTML = "";
     }else{
       pantalla.innerHTML = pantalla.innerHTML.slice(0,-1);
