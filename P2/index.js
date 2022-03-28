@@ -23,26 +23,26 @@ var ESTADO = {
 var estado = ESTADO.init;
 
 for (i = 0; i < numeros.length; i++) {
-    numeros[i].onclick = (ev)=>{
+    numeros[i].onclick = ev => {
         digit(ev.target.value);
         console.log("numero...");
     };
 }
-for(i = 0; i < operador.length; i++){
-    operador[i].onclick=(ev)=>{
-        if(estado == ESTADO.op1){
+for (i = 0; i < operador.length; i++) { 
+    operador[i].onclick = (ev) => {
+        if (estado == ESTADO.op1) {
             
             operacion(ev.target.value);
             console.log("operacion...");
         }
     };
 }
-function digit(num){
-    if(estado == ESTADO.init) {
+function digit(num) {
+    if (estado == ESTADO.init) {
         pantalla.innerHTML = num;
         estado = ESTADO.op1;
     }
-    else if(estado == ESTADO.op1) {
+    else if (estado == ESTADO.op1) {
         pantalla.innerHTML += num;
     }
     else if(estado == ESTADO.operation) {
