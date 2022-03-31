@@ -1,0 +1,31 @@
+.iresponsive {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+  }
+
+/* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
+/* Así conseguimos que el contenido se vea bien en dispositvos móviles */
+
+@media screen and (max-width: 600px) {
+    .columna {
+      width: 100%;
+    }
+
+    .iresponsive {
+        width: 100%;
+    
+    }
+} 
+
+body{
+    background-image:url('kingdom.png') ;
+}
+#canvas{
+    background-color: rgba(209, 82, 116, 0.8);
+    border: solid;
+    border-color: rgba(209, 82, 116, 0.9);;
+    margin: auto;
+    margin-left: 660px;
+    margin-top: 240px;
+}
