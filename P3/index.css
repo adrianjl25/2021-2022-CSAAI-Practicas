@@ -29,3 +29,21 @@ body{
     margin-left: 660px;
     margin-top: 240px;
 }
+#repetir {
+    margin-top: 5cm;
+    margin-left: 24cm;
+    font-family: "Lemon Friday";
+    font-size: 15px;
+    background-color: aqua;
+
+}
+
+
+#perder {
+    margin: auto;
+}
+
+#ganar {
+    margin-top: 1cm;
+    margin-left: 20.5cm;
+}
