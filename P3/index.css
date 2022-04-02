@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "kingdom";
+    src: url(Kingdom_Hearts_Font.ttf);
+}
+
 .iresponsive {
     padding: 0 6px;
     float: left;
@@ -30,10 +35,10 @@ body{
     margin-top: 240px;
 }
 #repetir {
-    margin-top: 5cm;
-    margin-left: 24cm;
-    font-family: "Lemon Friday";
-    font-size: 15px;
+    margin: auto;
+    align-items: center;
+    font-family: "kingdom";
+    font-size: 35px;
     background-color: aqua;
 
 }
@@ -44,6 +49,20 @@ body{
 }
 
 #ganar {
-    margin-top: 1cm;
-    margin-left: 20.5cm;
+    margin: auto;
 }
+
+/*header{
+    font-family: "kingdom";
+    color: white;
+    height: 80px;
+    width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    z-index: 12;
+}*/

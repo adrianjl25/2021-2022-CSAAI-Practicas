@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Breakout</title>
 </head>
 <body>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" width="600px" height="420px"></canvas>
     <button id="repetir" value="Recargar" onclick="location.reload()">JUGAR DE NUEVO</button>
-    <img id="perder" src="Perder.gif">
-    <img id="ganar" src="ganar.jpg">
+    <img id="perder" src="Perder.gif" width="620px" height="420px" >
+    <img id="ganar" src="Ganar.gif" width="620px" height="420px">
+    <audio autoplay loop>
+        <source src="Hikari.mp3" type="audio/mp3">
+    </audio>
+   <!-- <header>
+        <h1>Instrucciones</h1>
+        <ul>
+            <li>Pulsa espacio para iniciar la partida.</li>
+            <li>Utiliza las flechas derecha e izquierda para moverte.</li>
+            <li>Cuando la pelota toque el suelo perderás una vida.
+                Cuando tus vidas lleguen a 0, perderás el juego.
+            </li>
+        </ul>
+    </header> -->
 </body>
 </body>
 </html>

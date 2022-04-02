@@ -2,8 +2,8 @@
 const canvas = document.getElementById("canvas");
 
 
-canvas.width = 600;
-canvas.height = 420;
+//canvas.width = 600;
+// canvas.height = 420;
 
 const ctx = canvas.getContext("2d");
 
@@ -90,22 +90,21 @@ function drawraqueta() {
 //-- Recorrer todas las filas. La variable i toma valores de 0 hasta F-1 (número de filas)
 // RAQUETA
 document.addEventListener("keydown", function (ev) {
-  var desplazamiento = 10;
   if(ev.key === "ArrowRight") {
-    inicialraquetax +=  desplazamiento;
+    inicialraquetax = inicialraquetax + 15;
   
     if(inicialraquetax + raqueta.ancho >= canvas.width){
-      inicialraquetax = 600 - raqueta.ancho;
+      inicialraquetax = canvas.width - raqueta.ancho;
     }
   }else if(ev.key === "ArrowLeft" ){
-    inicialraquetax -= desplazamiento;
+    inicialraquetax -= 15;
  
     if (inicialraquetax < 0){
       inicialraquetax = 0;
     }
   }else if (ev.key === " "){
-    velocidadx = 3;
-    velocidady = 3;
+    velocidadx = 4;
+    velocidady = 4;
  
   }
   
@@ -157,6 +156,7 @@ function mostrarvidas () {
   ctx.fillStyle = "white";
   ctx.fillText("Vidas: " + vidas, 540, 18);
   ctx.font = "15px Arial";
+  
 
 }
 
