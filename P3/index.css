@@ -1,5 +1,7 @@
 @font-face{
     font-family: "kingdom";
+    src: url(ITC\ Benguiat\ Book.ttf);
+    font-family: "hearts";
     src: url(Kingdom_Hearts_Font.ttf);
 }
 
@@ -43,6 +45,16 @@ body{
 
 }
 
+#tit{
+    font-family: "hearts";
+    color: blue;
+    font-size: 35px;
+    margin-left: 36%;
+}
+#sora{
+    margin-left: 81%;
+    position: relative;
+}
 
 #perder {
     margin: auto;

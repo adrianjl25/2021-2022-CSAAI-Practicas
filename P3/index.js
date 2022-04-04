@@ -36,7 +36,7 @@ function drawLadrillos() {
             if (ladrillos[i][j].visible) {
                 ctx.beginPath();
                 ctx.rect(ladrillos[i][j].x, ladrillos[i][j].y, LADRILLO.w, LADRILLO.h);
-                ctx.fillStyle = "blue";
+                ctx.fillStyle = "rgb(88, 54, 125)";
                 ctx.fill();
                 ctx.closePath();
             }
@@ -83,7 +83,7 @@ let ball = {
     radius: 9,
     draw: function() {
         ctx.beginPath();
-          ctx.fillStyle = "white";
+          ctx.fillStyle = "rgb(255, 204, 153)";
           ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
           ctx.closePath();
         ctx.fill();
@@ -105,7 +105,7 @@ let raqueta = {
     draw: function(){
         ctx.beginPath();
         ctx.rect(this.x, canvas.height - this.height - 10, this.width, this.height);
-        ctx.fillStyle = "yellow";
+        ctx.fillStyle = "rgb(255, 202, 79)";
         ctx.closePath();
         ctx.fill();
     }
@@ -170,7 +170,7 @@ function play(){
             document.getElementById("canvas").style.display = "none";
             document.getElementById("perder").style.display = "";
             document.getElementById("repetir").style.display = "";
-            console.log("he perdido");
+            console.log("has perdido");
          //victoria   
         } else if (score == 65){
             ball.dx = 0;
@@ -179,18 +179,18 @@ function play(){
             document.getElementById("canvas").style.display = "none";
             document.getElementById("ganar").style.display = "block";
             document.getElementById("repetir").style.display = "";
-            console.log("he ganado");
+            console.log("has ganado");
         }
     
     
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     ctx.strokeStyle = 'black';
-    ctx.font = " 40px kingdom";
+    ctx.font = " 35px kingdom";
     ctx.strokeText("Vidas: " + vidas , 450, 35);
 
     ctx.strokeStyle = 'black';
-    ctx.font = "40px kingdom";
+    ctx.font = "35px kingdom";
     ctx.strokeText("Puntuacion: " + score , 10, 35);
 
     ball.draw();
