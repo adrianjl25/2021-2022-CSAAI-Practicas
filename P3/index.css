@@ -36,6 +36,7 @@ body{
 }
 #repetir {
     margin: auto;
+    position: relative;
     align-items: center;
     font-family: "kingdom";
     font-size: 35px;
