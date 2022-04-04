@@ -92,7 +92,7 @@ let ball = {
 // pulsando espacio se mueve la pelota
 window.onkeydown = (e) => {
     if (e.keyCode == 32){
-        ball.dx = 3;
+        ball.dx = 0;
         ball.dy = 3;
         
     } 
@@ -151,7 +151,7 @@ function play(){
     document.getElementById("perder").style.display = "none";
     document.getElementById("repetir").style.display = "none";
     //rebote pelota
-    if (ball.x <0 || ball.x >= canvas.width - 7) {
+    if (ball.x <0 || ball.x >= canvas.width - 7 ) {
         ball.dx = -ball.dx;
       }
     
@@ -162,7 +162,7 @@ function play(){
     if (ball.y >= canvas.height) {
         vidas = vidas -1;
         ball.x = canvas.width /2;
-        ball.y = canvas.height -50;
+        ball.y = canvas.height -60;
         ball.dx = 0;
         ball.dy = 0;
         // game over

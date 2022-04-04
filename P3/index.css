@@ -30,9 +30,8 @@ body{
     background-color: rgba(209, 82, 116, 0.8);
     border: solid;
     border-color: rgba(209, 82, 116, 0.9);;
-    margin: auto;
-    margin-left: 660px;
-    margin-top: 240px;
+    margin: 10% 33%;
+    position: relative;
 }
 #repetir {
     margin: auto;
