@@ -1,3 +1,8 @@
+const rulesBtn = document.getElementById('rules-btn');
+const closeBtn = document.getElementById('close-btn');
+const rules = document.getElementById('rules');
+
+
 const ctx = canvas.getContext("2d");
 izq = document.getElementById("izq");
 der = document.getElementById("der");
@@ -151,7 +156,7 @@ function play(){
     document.getElementById("perder").style.display = "none";
     document.getElementById("repetir").style.display = "none";
     //rebote pelota
-    if (ball.x <0 || ball.x >= canvas.width - 7 ) {
+    if (ball.x <0 || ball.x >= canvas.width - 7) {
         ball.dx = -ball.dx;
       }
     
@@ -168,15 +173,17 @@ function play(){
         // game over
         }else if (vidas == 0){
             document.getElementById("canvas").style.display = "none";
+            document.getElementById("rules-btn").style.display = "none";
             document.getElementById("perder").style.display = "";
             document.getElementById("repetir").style.display = "";
             console.log("has perdido");
          //victoria   
-        } else if (score == 65){
+        } else if (score == 1){
             ball.dx = 0;
             ball.dy = 0;
             speed = 0;
             document.getElementById("canvas").style.display = "none";
+            document.getElementById("rules-btn").style.display = "none";
             document.getElementById("ganar").style.display = "block";
             document.getElementById("repetir").style.display = "";
             console.log("has ganado");
@@ -218,3 +225,10 @@ function play(){
 
 }
 play();
+
+
+rulesBtn.addEventListener('click', () => rules.classList.add('show'));
+closeBtn.addEventListener('click', () => rules.classList.remove('show'));
+
+
+

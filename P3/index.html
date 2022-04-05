@@ -10,9 +10,25 @@
     <title>Breakout</title>
 </head>
 <body>
+    <button id="rules-btn" class="btn rules-btn">Instrucciones</button>
+
+        <div id="rules" class="rules">
+            <h1 id="title">Cómo jugar.</h1>
+            <ul id="lista">
+                <li> Para comenzar a jugar al Kingdom Hearts Breakout tendrás que pulsar la tecla espacio
+                para que la pelota empiece a moverse.</li>
+                <li>Para movernos usaremos las flechas de direccion derecha e izquierda.</li>
+                <li>Cuando la pelota toque el suelo, perderemos una vida.</li>
+                <li>Cuando nuestras vidas lleguen a 0, perderemos el juego.</li>
+                
+            </ul>
+            <button id="close-btn" class="btn">Cerrar</button><br>
+            <img id="sora" src="SoraKH1.png" height="300px" width="280px"><br>
+            <img id="logo" src="Kingdom-Hearts-Logo.png" height="200px" width="280px">
+        </div>
  <!--   <div id="titulo">
         <h1 id="tit">Kingdom Hearts Breakout</h1>
-        <img id="sora" src="SoraKH1.png" height="300px" width="280px">
+        
     </div>-->
     <canvas id="canvas" width="600px" height="420px"></canvas>
     <button id="repetir" value="Recargar" onclick="location.reload()">JUGAR DE NUEVO</button>
@@ -20,8 +36,8 @@
     <img id="ganar" src="Ganar.gif" width="620px" height="420px">
     
    <!-- <h1 id="ganado">¡Has ganado!</h1>-->
-    <audio autoplay loop>
-        <source src="Hikari.mp3" type="audio/mp3">
+    <audio autoplay loop volume="10">
+        <source src="working.mp3" type="audio/mp3">
     </audio>
    <!-- <header>
         <h1>Instrucciones</h1>
