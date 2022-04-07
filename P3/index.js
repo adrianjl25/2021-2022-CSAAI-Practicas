@@ -178,7 +178,7 @@ function play(){
             document.getElementById("repetir").style.display = "";
             console.log("has perdido");
          //victoria   
-        } else if (score == 1){
+        } else if (score == 65){
             ball.dx = 0;
             ball.dy = 0;
             speed = 0;
