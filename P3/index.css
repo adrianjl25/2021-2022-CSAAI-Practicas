@@ -36,7 +36,8 @@ body{
     position: relative;
 }
 #repetir {
-    margin: auto;
+    margin-top: 10px;
+    margin-left: 800px;
     position: relative;
     font-family: "kingdom";
     font-size: 35px;
@@ -59,27 +60,23 @@ body{
 }
 
 #perder {
-    margin: auto;
+    margin-left: 640px;
+    margin-top: 170px;
 }
 
 #ganar {
-    margin: auto;
+    margin-left: 640px;
+    margin-top: 170px;
 }
 
-/*header{
-    font-family: "kingdom";
+#ganado {
+    font-family: 'kingdom';
+    margin-left: 700px;
+    margin-top: 20px;
+    font-size: 80px;
     color: white;
-    height: 80px;
-    width: 100%;
-    padding: 0 3rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #121212;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-    z-index: 12;
-}*/
+}
+
 
 .btn{
     cursor: pointer;

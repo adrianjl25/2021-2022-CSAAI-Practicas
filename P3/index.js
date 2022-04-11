@@ -155,6 +155,7 @@ function play(){
     document.getElementById("ganar").style.display = "none";
     document.getElementById("perder").style.display = "none";
     document.getElementById("repetir").style.display = "none";
+    document.getElementById("ganado").style.display = "none";
     //rebote pelota
     if (ball.x <0 || ball.x >= canvas.width - 7) {
         ball.dx = -ball.dx;
@@ -176,6 +177,7 @@ function play(){
             document.getElementById("rules-btn").style.display = "none";
             document.getElementById("perder").style.display = "";
             document.getElementById("repetir").style.display = "";
+            document.getElementById("ganado").style.display = "none";
             console.log("has perdido");
          //victoria   
         } else if (score == 65){
@@ -186,6 +188,8 @@ function play(){
             document.getElementById("rules-btn").style.display = "none";
             document.getElementById("ganar").style.display = "block";
             document.getElementById("repetir").style.display = "";
+            document.getElementById("ganado").style.display = "";
+            
             console.log("has ganado");
         }
     
@@ -229,6 +233,3 @@ play();
 
 rulesBtn.addEventListener('click', () => rules.classList.add('show'));
 closeBtn.addEventListener('click', () => rules.classList.remove('show'));
-
-
-
