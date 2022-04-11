@@ -61,15 +61,15 @@ body{
 
 #perder {
     margin-left: 640px;
-    margin-top: 170px;
+    margin-top: 120px;
 }
 
 #ganar {
     margin-left: 640px;
-    margin-top: 170px;
+    margin-top: 120px;
 }
 
-#ganado {
+h1 {
     font-family: 'kingdom';
     margin-left: 700px;
     margin-top: 20px;
@@ -117,7 +117,6 @@ body{
     min-height: 100vh;
     max-width: 100%;
     width: 400px;
-    padding: 2px;
     line-height: 1.5;
     transform: translateX(-400px);
     transition: transform 1s ease-in-out;
@@ -125,10 +124,6 @@ body{
 
 .rules.show{
     transform: translateX(0);
-}
-#title{
-    font-family: 'kingdom';
-    margin-left: 5px;
 }
 #lista{
     font-family: 'kingdom';

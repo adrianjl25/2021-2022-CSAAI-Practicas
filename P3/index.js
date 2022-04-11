@@ -222,7 +222,8 @@ function play(){
              ball.dy = -speed * Math.cos(angle);
          }
     
-    
+         rulesBtn.addEventListener('click', () => rules.classList.add('show'));
+        closeBtn.addEventListener('click', () => rules.classList.remove('show'));
 
     requestAnimationFrame(play);
 
@@ -231,5 +232,4 @@ function play(){
 play();
 
 
-rulesBtn.addEventListener('click', () => rules.classList.add('show'));
-closeBtn.addEventListener('click', () => rules.classList.remove('show'));
+
