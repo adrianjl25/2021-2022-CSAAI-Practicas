@@ -1,1 +1,2 @@
  # Práctica 3
+Comenzamos a jugar pulsando el espacio y nos movemos con las teclas derecha e izquierda. Como mejora he puesto una cancion de fondo que se autoreproduce cuando cargamos la página y he intentado hacer que el canvas del juego sea responsive. La velocidad y el ángulo de la pelota es aleatorio. He añadido un botón de "Jugar de nuevo" que recargar la página para volver a jugar. He añadido también dos gifs que cambian según ganamos o perdemos la partida.
