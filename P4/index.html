@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-    <title>Práctica 4</title>
+    <title>Manipulación de imágenes.</title>
+    <link rel="icon" type="image/x-icon" href="Nerv2.png">
 </head>
 <body>
     <div id="izquierda">
     <p>Imagen original</p>
-    <img src="evangelion.jpg" id="imagesrc" width="650px">
+    <img src="image.jpg" id="imagesrc" width="650px">
     
     </div>
     <div id="derecha">
@@ -22,18 +23,21 @@
     <fieldset id="fieldset">
         <legend id="legend"><h4>Gama de colores</h4></legend>
     <p>Establece el umbral de rojo:</p>
-    <input type="range" id="deslizador" min="0" max="255" value="255"/>
-    <p id="range_value">00</p>
+    <input type="range" id="deslizadorR" min="0" max="255" value="255"/>
+    <p id="range_valuer">255</p>
 
     <p>Establece el umbral de verde:</p>
-    <input type="range" id="deslizadorg" min="0" max="255" value="255"/>
-    <p id="range_valueg">00</p>
+    <input type="range" id="deslizadorG" min="0" max="255" value="255"/>
+    <p id="range_valueg">255</p>
     
     <p>Establece el umbral de azul:</p>
-    <input type="range" id="deslizadorb" min="0" max="255" value="255"/>
-    <p id="range_valueb">00</p>
+    <input type="range" id="deslizadorB" min="0" max="255" value="255"/>
+    <p id="range_valueb">255</p>
 
-    <button id="gris">GRIS</button>
+    <button id="gris">ESCALA DE GRISES</button>
+    <button id="negativo">NEGATIVO</button>
+    <button id="espejo">ESPEJO</button>
+    <button id="ruido">RUIDO</button>
     </fieldset>
     </div>
     

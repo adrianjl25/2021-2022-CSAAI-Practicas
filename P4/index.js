@@ -3,21 +3,24 @@ const img = document.getElementById('imagesrc')
 const ctx = canvas.getContext('2d');
 
 //-- Acceso al deslizador
-const deslizador = document.getElementById('deslizador');
-const deslizadorg = document.getElementById('deslizadorg');
-const deslizadorb = document.getElementById('deslizadorb');
+const deslizadorR = document.getElementById('deslizadorR');
+const deslizadorG = document.getElementById('deslizadorG');
+const deslizadorB = document.getElementById('deslizadorB');
 
 //-- Valor del deslizador
-const range_value = document.getElementById('range_value');
+const range_valuer = document.getElementById('range_valuer');
 const range_valueg = document.getElementById('range_valueg');
 const range_valueb = document.getElementById('range_valueb');
 
 //gris
 const gris = document.getElementById('gris');
+const neg = document.getElementById('negativo');
+const esp = document.getElementById('espejo');
+const ruidos = document.getElementById('ruido');
 
 // Cargamos la imagen
 img.onload = function () {
-    console.log("imagen cargada");
+    console.log("Imagen cargada");
     
     //Ajustamos el canvas a la imagen
     canvas.width = img.width;
@@ -28,15 +31,15 @@ img.onload = function () {
 
 
 
-deslizador.oninput = () => {
+deslizadorR.oninput = () => {
     //-- Mostrar el nuevo valor del deslizador
   colores();
 }
-deslizadorg.oninput = () => {
+deslizadorG.oninput = () => {
     //-- Mostrar el nuevo valor del deslizador
   colores();
 }
-deslizadorb.oninput = () => {
+deslizadorB.oninput = () => {
     //-- Mostrar el nuevo valor del deslizador
   colores();
 }
@@ -55,14 +58,14 @@ function colores() {
     let data = imgData.data;
 
     //Modificamos la imagen según el valor de los deslizadores
-    range_value.innerHTML = deslizador.value;
-    valorrojo = deslizador.value
+    range_valuer.innerHTML = deslizadorR.value;
+    valorrojo = deslizadorR.value
 
-    range_valueg.innerHTML = deslizadorg.value;
-    valorverde = deslizadorg.value
+    range_valueg.innerHTML = deslizadorG.value;
+    valorverde = deslizadorG.value
 
-    range_valueb.innerHTML = deslizadorb.value;
-    valorazul = deslizadorb.value
+    range_valueb.innerHTML = deslizadorB.value;
+    valorazul = deslizadorB.value
 
     for (let i = 0; i < data.length; i+=4) {
         if (data[i] > valorrojo) 
@@ -92,10 +95,57 @@ function grises(){
     }
     ctx.putImageData(imgData, 0, 0);
   }
+  function negativo(){
+    ctx.drawImage(img, 0,0);
+    let imgData = ctx.getImageData(0,0, canvas.width, canvas.height);
+    let data = imgData.data;
+    
+    for (let i = 0; i < data.length; i+=4) {
+      // calculamos el valor de cada componente cromático del color complementario
+      // el valor máximo que pueden tomar estos componentes es 255
+      negativoR = 255 - data[i];
+      negativoG = 255 - data[i+1];
+      negativoB = 255 - data[i+2];
+
+      data[i] = negativoR;
+      data[i+1] = negativoG;
+      data[i+2] = negativoB;
+  }
+  //-- Poner la imagen modificada en el canvas
+ ctx.putImageData(imgData, 0, 0);
+  }
+  function espejo(){
+    ctx.translate(2*(img.width)/2,0);
+    ctx.scale(-1,1);
+    ctx.drawImage(img, 0,0);
+  }
+
+  function ruido(){
+    var ruido = 1;
+    let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let data = imgData.data;
+    for (var i = 0; i < data.length; i+=4) {
+        ruido = Math.floor(Math.random() * (100 + 100 + 10) - 150)
+        // cuanto más mayor sea la diferencia (estos numeros) más brillo = blanca se queda la imagen
+        data[i] += ruido;
+        data[i+1] += ruido;
+        data[i+2] += ruido;
+    }
+    ctx.putImageData(imgData, 0, 0);
+  }
 
   gris.onclick = () => {
     
     grises();
-   
-    
+  }
+
+  neg.onclick = () => {
+
+    negativo();
+  }
+  esp.onclick = () =>{
+    espejo();
+  }
+  ruidos.onclick = () =>{
+    ruido();
   }

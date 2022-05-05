@@ -1,3 +1,9 @@
+@font-face{
+    font-family: "evangelion";
+    src: url(ITC\ Benguiat\ Book.ttf);
+}
+
+
 body{
     background-image:url('fondo.jpg');
 }
@@ -6,13 +12,16 @@ body{
     float: right;
     text-align: center;
     margin-right: 2%;
-    
+    font-family: "evangelion";
+    font-size: x-large;
 }
 
 #izquierda{
     float: left;
     text-align: center;
     margin-left: 2%;
+    font-family: "evangelion";
+    font-size: x-large;
 }
 
 #fieldset{
@@ -22,15 +31,17 @@ body{
     border-radius: 5px;
     border: solid white;
     background-color: rgba(156,197,223,0.9);
+    font-family: "evangelion";
     
 }
 
 #legend{
     border-radius: 5px;
     border: solid white;
-    margin-left: 50px;
+    /**margin-left: px;**/
     text-align: center;
     background-color: rgba(156,197,223,0.9);
+    font-family: "evangelion";
     
 }
 
