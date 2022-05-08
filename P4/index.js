@@ -2,17 +2,17 @@ const canvas = document.getElementById('canvas');
 const img = document.getElementById('imagesrc')
 const ctx = canvas.getContext('2d');
 
-//-- Acceso al deslizador
+//Acceso al deslizador
 const deslizadorR = document.getElementById('deslizadorR');
 const deslizadorG = document.getElementById('deslizadorG');
 const deslizadorB = document.getElementById('deslizadorB');
 
-//-- Valor del deslizador
+//Valor del deslizador
 const range_valuer = document.getElementById('range_valuer');
 const range_valueg = document.getElementById('range_valueg');
 const range_valueb = document.getElementById('range_valueb');
-
-//gris
+//botones
+const colors = document.getElementById('colores');
 const gris = document.getElementById('gris');
 const neg = document.getElementById('negativo');
 const esp = document.getElementById('espejo');
@@ -134,18 +134,26 @@ function grises(){
     ctx.putImageData(imgData, 0, 0);
   }
 
+  colors.onclick = () =>{
+    colores();
+    document.getElementById('fieldset1').style.display = 'block';
+    console.log('ola XD');
+  }
+
   gris.onclick = () => {
-    
     grises();
+    document.getElementById('fieldset1').style.display = 'none';
   }
 
   neg.onclick = () => {
-
     negativo();
+    document.getElementById('fieldset1').style.display = 'none';
   }
   esp.onclick = () =>{
     espejo();
+    document.getElementById('fieldset1').style.display = 'none';
   }
   ruidos.onclick = () =>{
     ruido();
+    document.getElementById('fieldset1').style.display = 'none';
   }
