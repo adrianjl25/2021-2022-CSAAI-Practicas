@@ -17,6 +17,7 @@ const gris = document.getElementById('gris');
 const neg = document.getElementById('negativo');
 const esp = document.getElementById('espejo');
 const ruidos = document.getElementById('ruido');
+const inv = document.getElementById('invertir');
 
 // Cargamos la imagen
 img.onload = function () {
@@ -126,7 +127,6 @@ function grises(){
     let data = imgData.data;
     for (var i = 0; i < data.length; i+=4) {
         ruido = Math.floor(Math.random() * (100 + 100 + 10) - 150)
-        // cuanto más mayor sea la diferencia (estos numeros) más brillo = blanca se queda la imagen
         data[i] += ruido;
         data[i+1] += ruido;
         data[i+2] += ruido;
@@ -134,10 +134,17 @@ function grises(){
     ctx.putImageData(imgData, 0, 0);
   }
 
+  function invertir(){
+    desliz.style.display = "none";
+    ctx.drawImage(img, 0, 0);
+    ctx.translate(0, img.height);
+    ctx.scale(1, -1);
+    ctx.drawImage(img, 0, 0);
+  }
+
   colors.onclick = () =>{
     colores();
     document.getElementById('fieldset1').style.display = 'block';
-    console.log('ola XD');
   }
 
   gris.onclick = () => {
