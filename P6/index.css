@@ -1,0 +1,32 @@
+@font-face{
+    font-family: "zelda";
+    src: url(The\ Wild\ Breath\ of\ Zelda.otf);
+}
+
+body{
+    background-image:url('zeldabg.jpg');
+}
+
+input{
+    background-color: aqua;
+    border-color: rgb(0, 219, 219);
+    border-radius: 5px;
+    font-family: "zelda";
+}
+#directo{
+    margin-left: 31%;
+    
+}
+#video1{
+    margin-left: 30%;
+}
+
+#botones{
+    margin-right: 43%;
+    margin-left: 43%;
+    border-radius: 5px;
+    text-align: center;
+    border: solid white;
+    background-color: rgba(156,197,223,0.9);
+}
+
